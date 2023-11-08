@@ -39,9 +39,10 @@ public class ValidateAanglam {
     public static void main(String[] args) {
         ValidateAanglam validateAanglam=new ValidateAanglam();
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the two strings");
+        System.out.println("Enter the string 1");
         String str1 = sc.nextLine().trim();
-        String str2 = sc.nextLine().trim();
+        System.out.println("Enter the string 2");
+         String str2 = sc.nextLine().trim();
         System.out.println(validateAanglam.isAnagram(str1, str2));
     }
 }

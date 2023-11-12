@@ -11,9 +11,7 @@ public class ConvertMinHeapToMaxHeap {
             for(int i=0;i<N;i++){
                 pq.add(arr[i]);
             }
-            ArrayList<Integer> a = new ArrayList<>(pq);
-            Collections.reverse(a);
-            System.out.println(a);
+            
         }
         public static void main(String[] args) {
             int n = 4;

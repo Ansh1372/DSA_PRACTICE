@@ -1,6 +1,6 @@
 package Strings;
 
-import java.util.HashMap;
+import java.util.*;
 
 public class IsomorphicString {
     public static boolean areIsomorphic(String str1,String str2)
@@ -32,8 +32,10 @@ public class IsomorphicString {
         return true;
     }
     public static void main(String[] args) {
-        String s1="egg";
-        String s2="add";
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter two string");
+        String s1=sc.nextLine();
+        String s2=sc.nextLine();
         System.out.println("Are the strings isomorphic? "+areIsomorphic(s1,s2));
     
     }

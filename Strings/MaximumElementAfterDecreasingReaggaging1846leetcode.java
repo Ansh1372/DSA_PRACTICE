@@ -19,7 +19,7 @@ public class MaximumElementAfterDecreasingReaggaging1846leetcode {
         Scanner sc = new Scanner(System.in);
         int size = sc.nextInt();
         int[] arr = new int[size];
-        for(int i=0;i<n;i++){
+        for(int i=0;i<size;i++){
             arr[i] = sc.nextInt();
         }
         int m = maximumElementAfterDecrementingAndRearranging(arr);

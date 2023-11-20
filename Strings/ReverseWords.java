@@ -16,9 +16,9 @@ public class ReverseWords {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the string");
         String s = sc.nextLine();
-        System.out.println("before revise");
+        System.out.println("--------before revise-------");
         System.out.println(s);
-        System.out.println("after revise");
+        System.out.println("-------after revise--------------");
         System.out.println(reverseStringwords(s));
     }
 }

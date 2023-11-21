@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Scanner;
 import java.util.Set;
 
 public class SortByVowel {
@@ -38,8 +39,11 @@ public class SortByVowel {
         return new String(arr);
     }
     public static void main(String[] args) {
-        System.out.println("Sorted string: " + sortVowels("hello"));
-        System.out.println("Sorted string: " + sortVowels("leetCODE"));
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a string:");
+        String str = sc.nextLine().trim();
+        System.out.println("Sorted Vowels in the given string are : " + sortVowels(str));
+        
 
 
     }

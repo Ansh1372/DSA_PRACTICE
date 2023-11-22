@@ -39,6 +39,7 @@ public class KthLargestNumber {
         int k = sc.nextInt();
         int[] arr = new int[n];
         for(int i=0;i<n;i++){
+            System.out.println("Enter the valu to be in arr" + i);
             arr[i] = sc.nextInt();
         }
         int[] output = kLargest(arr, n, k);

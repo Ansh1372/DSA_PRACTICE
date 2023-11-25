@@ -1,7 +1,7 @@
 package Math;
 import java.util.*;
 public class GetSumAbsoluteDifference {
-    public static int[] getSumAbsoluteDifferences(int[] nums) {
+    public static int[] getSumAbsoluteDifferences1(int[] nums) {
         int n = nums.length;
         int[] res = new int[n]; 
         int[] pre = new int[n];
@@ -14,6 +14,23 @@ public class GetSumAbsoluteDifference {
         }
         return res;
     }
+    public static int[] getSumAbsoluteDifferences2(int[] nums) {
+        int n = nums.length;
+        int[] res = new int[n]; 
+        // int[] pre = new int[n];
+        // pre[0]=nums[0];
+        int pre = 0;
+        int sum =0;
+        for(int i=0;i<n;i++){
+            // pre[i]=pre[i-1]+nums[i];
+            sum+=nums[i];
+        }
+        for(int i=0;i<n;i++){
+           res[i] = (nums[i]*i) - pre + sum-pre-nums[i] - nums[i]*(n-i-1);
+           pre+=nums[i];
+        }
+        return res;
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -21,11 +38,16 @@ public class GetSumAbsoluteDifference {
         for(int i=0;i<n;i++){
             nums[i] = sc.nextInt();
         }
-        int[] res = getSumAbsoluteDifferences(nums);
+        int[] res1 = getSumAbsoluteDifferences1(nums);
         for(int i=0;i<n;i++){
-            System.out.print(res[i]+" ");
+            System.out.print(res1[i]+" ");
+        }
+        int[] res2 = getSumAbsoluteDifferences2(nums);
+        for(int i=0;i<n;i++){
+            System.out.print(res2[i]+" ");
         }
 
-        
+
+
     }
 }

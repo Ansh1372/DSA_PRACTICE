@@ -77,7 +77,7 @@ public class CountInversion {
         
         }
         System.out.println("Number of inversions are : " + numberOfInversionsBruteForce(a, n));
-        System.out.println("optimize approch");
+        System.out.println("most optimize approch");
         System.out.println("Number of inversions are : " + numberOfInversions(a,n));
     }
 }

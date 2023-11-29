@@ -45,7 +45,8 @@ public class CheckArmethicSubArrays {
             l[i] = sc.nextInt();
             r[i] = sc.nextInt();
         }
-        checkArithmeticSubarrays(nums, l, r);
+        System.out.println("Output: " + checkArithmeticSubarrays(nums, l, r).toString());
+        
         
 
 

@@ -77,7 +77,7 @@ public class DelectionInHeap {
 
         System.out.println("Before delete, heap elements are : ");
         printArray(arr, n);
-        System.out.println("perform function to delete");
+        System.out.println(" ---------------------perform function to delete--------------------- ");
 
         n = delete(arr, n);
 

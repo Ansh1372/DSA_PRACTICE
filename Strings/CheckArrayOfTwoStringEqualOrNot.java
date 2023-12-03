@@ -17,5 +17,10 @@ public class CheckArrayOfTwoStringEqualOrNot {
        String[] arr4 = {"hellohw","world"};
        System.out.println(arrayStringsAreEqual(arr1, arr2));
        System.out.println(arrayStringsAreEqual(arr4, arr3));   // Output: true
+       System.out.println(arrayStringsAreEqual(arr1, arr3));
+       System.out.println(arrayStringsAreEqual(arr2, arr3));
+       System.out.println(arrayStringsAreEqual(arr1, arr4));
+       System.out.println(arrayStringsAreEqual(arr2, arr4));
+
     }
 }

@@ -33,15 +33,19 @@ public class GetSumAbsoluteDifference {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("enter size of array");
         int n = sc.nextInt();
         int[] nums = new int[n];
+        System.out.println("input array");
         for(int i=0;i<n;i++){
             nums[i] = sc.nextInt();
         }
+        System.out.println("applying function : res1");
         int[] res1 = getSumAbsoluteDifferences1(nums);
         for(int i=0;i<n;i++){
             System.out.print(res1[i]+" ");
         }
+         System.out.println("applying function : res2");
         int[] res2 = getSumAbsoluteDifferences2(nums);
         for(int i=0;i<n;i++){
             System.out.print(res2[i]+" ");

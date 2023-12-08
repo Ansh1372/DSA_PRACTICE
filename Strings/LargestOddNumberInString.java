@@ -15,8 +15,6 @@ public class LargestOddNumberInString {
         Scanner d = new Scanner(System.in);
         System.out.println("Enter the string");
         String str = d.nextLine();
-        System.out.print("largest odd number in givin string is : ");
-        System.out.print(largestOddNumber(str));
-
+        System.out.print("largest odd number in givin string is : " + largestOddNumber(str));
     }
 }

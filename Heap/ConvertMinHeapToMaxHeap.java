@@ -1,8 +1,8 @@
 package Heap;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.PriorityQueue;
+import java.util.*;
+
+
 
 public class ConvertMinHeapToMaxHeap {
         public static void convertMinToMaxHeap(int N, int arr[]) {
@@ -14,8 +14,12 @@ public class ConvertMinHeapToMaxHeap {
             
         }
         public static void main(String[] args) {
-            int n = 4;
-            int arr[] = {1,2,3,4};
+            Scanner sc = new Scanner(System.in);
+            int n = sc.nextInt();
+            int arr[] = new int[n];
+            for(int i=0;i<n;i++){
+                arr[i] = sc.nextInt();
+            }
             convertMinToMaxHeap(n, arr);
         }
 }

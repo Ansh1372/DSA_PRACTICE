@@ -4,8 +4,8 @@ package BinaryTree;
 import java.util.*;
 class Node
 {
-    int data;
-    Node left, right;
+    int data ;
+    Node left, right ;
 }
 public class CountNoOfLeaves {
     public static int countLeaves(Node root) 
